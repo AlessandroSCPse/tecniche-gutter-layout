@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 2rem 1rem;
+}
+.section-1 {
+    background-color: lightblue;
+}
+.section-2 {
+    background-color: lemonchiffon;
+}
+
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col {
+    border: 1px solid red;
+    width: 100%;
+}
+
+.card {
+    background-color: lightgray;
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 600px) {
+    .columns {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    .col {
+        width: 50%;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .col {
+        width: 25%;
+    }
+}
